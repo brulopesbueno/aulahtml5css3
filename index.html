@@ -1,103 +1,86 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <title>Minha Pagina </title>
+    <meta charset="UTF-8">
+    <title>Bruna Bueno</title>
     <!-- para linkar o html com css devemos informar esse codigo, para que ele puxe as edições do css-->
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://kit.fontawesome.com/0d09003de3.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <nave>
-        <!-- criar menu-->
-        <p> minha pagina</p>
-        <ul>
-            <li><a href="#Serviços">Serviços</a></li>
-            <li><a href="#Clientes">Clientes</a></li>
-            <li><a href="#Parceiros">Parceiros</a></li>
-            <li><a href="#Time">Time</a></li>
-            <li><a href="#Contato">Contato</a></li>
-        </ul>
-
-    </nave>
-    <p> Curso de HTML5 e CSS3 </p>
-
-    <!-- cabeçalho-->
-    <header>
-        <h1> Minha pagina</h1>
-        <p>Oferecemos os melhores sites e app para sua empresa</p>
-    </header>
-
-    <section id="Serviços">
-        <!--separar seções de conteudo-->
-        <h2>Serviços</h2>
-        <p> Oferecemos os melhores serviços</p>
-        <div>
-            <img src="img//means .jpg" class="img_padrao">
+    <!--<button type="button" class="btn btn-primary">Teste</button>-->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <!--<a class="navebar-brand" href="#">Minha pagina</a>-->
+        <a class="navebar-brand" href="#">
+            <!--<img src="img/text.jpg" widht="50" height="180">-->
+        </a>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav">
+                <li>
+                    <i class="fas fa-dog"></i>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#minhapagina">Minha pagina </a>
+                </li>
+                <li class=>
+                    <a class="nav-link" href="#parceiros">Parceiros </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#servicos">Serviços</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#quemsomos">Quem somos</a>
+                </li>
+                </a>
         </div>
-        <div>
-            <img src="img//means .jpg" class="img_padrao">
-        </div>
-    </section>
-
-    <section id="Clientes">
-        <!--separar seções de conteudo-->
-        <h2>Clientes</h2>
-        <p> Melhores clientes</p>
-
-        <div>
-            <img src="img//glass.jpg" width="300px">
+    </nav>
+    <section id="quemsomos">
+        <div class="container-fluid quem-somos text-center margin ">
+            <h3 class="margin">Quem somos</h3>
+            <img src="img/group.jpg " class="rounded-circle" width="240" height="240">
         </div>
     </section>
-
     <section id="Parceiros">
-        <h2>Parceiros</h2>
-        <p>Nossos parceiros</p>
-        <div>
-            <!--para a imagem virar link e abrir uma nova aba com site-->
-            <a href="http://https://www.google.com.br/" target='"_blank"'>
-                <img src="img//young.jpg" width="130px">
+        <div class="container-fluid quem-somos text-center margin ">
+            <h3 class="margin">Parceiros</h3>
+            <div class="row">
+                <div class="col-lg-4">
+                    <img src="img/monu.jpg " class="rounded-circle" width="100" height="100">
+                </div>
+                <div class="col-lg-4">
+                    <img src="img/person.jpg " class="rounded-circle" width="100" height="100">
+                </div>
+                <div class="col-lg-4">
+                    <img src="img/white.jpg " class="rounded-circle" width="100" height="100">
+                </div>
 
-            </a>
-        </div>
-
+            </div>
+    </section>
+    <section id="servicos">
+        <div class="container-fluid servicos text-center margin">
+            <h3 class="margin"> Serviços </h3>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                        <img src="img/moon.jpg " width="80%" height="70%">
+                    </div>
+                    <div class="col-lg-6">
+                        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                        <img src="img/glass.jpg " width="80%" height="70%">
+                    </div>
+                </div>
+            </div>
 
     </section>
 
-    <section id="Time">
-        <h2>Time</h2>
-        <p> Melhor time</p>
-        <div>
-            <img src="img//group.jpg" width="300px">
-        </div>
-
-    </section>
-
-    <section id="Contato">
-
-        <h2>Contato</h2>
-        <p> Fale conosco</p>
-
-        <div>
-            <img src="img//monu.jpg" width="300px">
-        </div>
-        <div>
-            <img src="img//black.jpg" class="perfil">
-            <p><a href="mailto:bruna_lopesbueno@hotmail.com"> bruna_lopesbueno@hotmail.com</a></p>
-        </div>
-        <div>
-            <img src="img//phone.jpg" widht="10px">
-            <p><a href="tel:129898989989">(12) 9898989989</a></p>
-        </div>
-    </section>
-
-    <!-- rodapé-->
-    <footer>
-        <p>Desenvolvido por Bruna Bueno</p>
+    <footer class=" container-fluid text-center bg-footer margin">
+        <p> Desenvolvido por Bruna bueno</p>
     </footer>
 </body>
-
 
 
 </html>
